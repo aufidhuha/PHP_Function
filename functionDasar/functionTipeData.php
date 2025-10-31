@@ -38,3 +38,7 @@ function sumAll(...$number){
 
 sumAll(10, 20, 30);
 sumAll(10, 20, 30, 40, 50);
+
+$arrayNum = [10, 20, 30, 40, 50];
+// sumAll($arrayNum); error karena tipe data array, sedangkan argument length akan merubah array menjadi kumpulan integer
+sumAll(...$arrayNum);
